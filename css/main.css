@@ -50,11 +50,7 @@ img {
   color: #0074D9;
 }
 
-@media only screen and (min-width: 15em) { 
-
-}
-
-@media only screen and (min-width: 20em) {
+@media only screen and (min-width: 25em) { 
 
   .nav {
     text-align: center;
@@ -68,7 +64,7 @@ img {
 
 @media only screen and (min-width: 40em) {
 
-  .h1 {
+   .h1 {
     top: 0;
   }
 
@@ -79,6 +75,9 @@ img {
   .h1 {
     float: left;
   }
+}
+
+@media only screen and (min-width: 60em) {
 
 }
 
