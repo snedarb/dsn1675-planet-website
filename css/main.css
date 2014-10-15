@@ -15,6 +15,24 @@ html {
   text-size-adjust: 100%;
 }
 
+@media only screen and (min-width: 60em) {
+    html {
+      font-size: 110%;
+    }
+}
+
+@media only screen and (min-width: 90em) {
+    html {
+      font-size: 120%;
+    }
+}
+
+@media only screen and (min-width: 120em) {
+    html {
+      font-size: 130%;
+    }
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -31,14 +49,9 @@ body {
 
 .masthead {
   overflow: hidden;
-
-  background-color: #ccc;
 }
 
 .title {
-  display: block;
-  margin: 0;
-
   text-align: center;
 }
 
@@ -67,16 +80,24 @@ body {
   color: #fff;
 }
 
-.images {
-  background-color: #efefef;
+.section-dark {
+  background-color: #ccc;
 }
 
-.characteristics {
+.section-mid {
   background-color: #e2e2e2;
 }
 
-.bottom {
-  background-color: #ccc;
+.section {
+  background-color: #efefef;
+}
+
+.intro {
+  text-align: center;
+}
+
+.observation-section {
+  background-color: #e2e2e2;
 }
 
 @media only screen and (min-width: 25em) {
@@ -89,22 +110,47 @@ body {
     display: inline-block;
   }
 
+  .copyright {
+    text-align: center;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
 
-  .title {
-    float: left;
-  }
-
+  .title,
   .nav {
+    text-align: left;
+  }
+
+  .copyright {
     float: left;
+  }
+
+  .nav-footer {
+    float: right;
+  }
+
+  .observation-text {
+    padding-right: 1.5rem;
   }
 
 }
 
-.intro {
-  background-color: #e2e2e2;
+@media only screen and (min-width: 60em) {
 
-  text-align: center;
+  .datalist dt{
+    float: left;
+    width: 50%;
+  }
+
+  .datalist dd {
+    clear: right;
+  }
+
+  .moon-text {
+    padding-left: 1.5rem;
+  }
+
 }
+
