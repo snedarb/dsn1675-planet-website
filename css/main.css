@@ -100,6 +100,35 @@ body {
   background-color: #e2e2e2;
 }
 
+label {
+  display: block;
+}
+
+input + label {
+  display: inline-block;
+}
+
+button {
+  font-size: 1em;
+  border: 1px solid #000;
+  background-color: #fff;
+  border-radius: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.text-box {
+  width: 100%;
+  padding-bottom: 1em;
+}
+
+textarea {
+  width: 100%;
+  height: 10em;
+}
+
 @media only screen and (min-width: 25em) {
 
   .nav {
@@ -112,6 +141,10 @@ body {
 
   .copyright {
     text-align: center;
+  }
+
+  .radio {
+    white-space: nowrap;
   }
 
 }
@@ -150,6 +183,11 @@ body {
 
   .moon-text {
     padding-left: 1.5rem;
+  }
+
+  form {
+    max-width: 30em;
+    margin: 0 auto;
   }
 
 }
